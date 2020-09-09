@@ -167,10 +167,10 @@ I am a very keen and quick learner and give my best to any task I take up. I am 
                 <h2 class="section-title">Contact</h2>
 
                 <div class="contact__container bd-grid">
-                    <form action="contact.php" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                    <form action="contact.php" class="contact__form" method="POST">
+                        <input type="text" placeholder="Name" name="name" class="contact__input">
+                        <input type="mail" placeholder="Email" name="email" class="contact__input">
+                        <textarea id="" cols="0" rows="10" name="message" class="contact__input"></textarea>
                         <input type="button" value="Send" class="contact__button button">
                     </form>
                 </div>

@@ -1,3 +1,3 @@
 # Shikhar Gupta - Portfolio
-This is my Portfolio. No Pull requests will be entertained. Visit:
+This is my Portfolio. Visit:
 [Shikhar Gupta](http://shikhargupta-in.github.io/)

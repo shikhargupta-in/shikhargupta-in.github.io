@@ -189,6 +189,11 @@
   font-family: sans-serif;
   font-size: 18px;
 }
+.heading{
+  padding-top: 30px;
+  color: #760000;
+  font-size: 30px;
+}
 
 .skills{
   padding-left: 300px;

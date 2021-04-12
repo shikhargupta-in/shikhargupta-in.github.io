@@ -349,6 +349,7 @@
   font-size: 15px;
   font-family: sans-serif;
   overflow: hidden;
+  position: absolute;
 }
 
 

@@ -103,7 +103,7 @@
   width: 1015px;
 
   /* Center and scale the image nicely */
-  background-image: url("bg.jpg") ;
+  background-image: url("bg.gif") ;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -316,6 +316,7 @@
   padding-right: 100px;
   height: 790px;
   background-color: #F0F0F0;
+  background-image: url("leaves.gif") ;
 }
 
 .resume h2{
@@ -399,6 +400,7 @@
   font-family: sans-serif;
   overflow: hidden;
   position: absolute;
+  background-image: url("leaves.gif") ;
 }
 
 

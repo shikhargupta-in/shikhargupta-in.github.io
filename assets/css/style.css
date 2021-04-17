@@ -200,6 +200,7 @@
   padding-right: 100px;
   height: 500px;
   background-color: #F0F0F0;
+  margin-right: -7px;
 }
 
 .skills h2{
@@ -214,6 +215,7 @@
 }
 .skills__text{
   margin-bottom: var(--mb-4);
+  padding-bottom: 20px;
 }
 .skills__data{
   display: flex;
@@ -317,6 +319,7 @@
   height: 790px;
   background-color: #F0F0F0;
   background-image: url("leaves.gif") ;
+  margin-right: -7px;
 }
 
 .resume h2{
@@ -406,79 +409,15 @@
 }
 
 
-
-/* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
-@media screen and (max-height: 450px) {
-
-/* Style the sidebar - fixed full height */
-.sidebar {
-  padding: 0px 0px 0px 0px;
-  margin-right: 0px;
-  height: 572px;
-  width: 100%;
-  position: absolute;
-}
-
-/* Style the main content */
-.home{
-  margin: 572px 0px 0px -10px; /* Same as the width of the sidenav */
-  /* Full height */
-  height: 700px;
-  width: 100%;
-
-  /* Center and scale the image nicely */
-  background-image: url("bg.gif") ;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  }
-
-.aboutme{
-  padding: 1px 0px 0px 0px;
-  height: 570px;
-}
-
-.skills{
-  padding: 0px 0px 0px 0px;
-  height: 500px;
-  background-color: #F0F0F0;
-  margin: 0px 0px 0px -1px;
-}
-.portfolio{
-  padding: 0px 0px 0px 0px;
-  height: 600px;
-}
-
-.resume{
-  padding: 0px 0px 0px 0px;
-  height: 850px;
-}
-
-.contact{
-  padding: 0px 0px 0px 0px;
-  height: 500px;
-}
-
-.footer{
-  padding: 0px 0px 0px 0px;
-  width: 100%;
-  font-size: 15px;
-  font-family: sans-serif;
-  overflow: hidden;
-  position: absolute;
-  margin: 200px 0px;
-}
-
-}
 @media only screen and (max-width: 1000px)
 {
   .sidebar{
     width: 0px;
   }
   .home{
-    margin-top: 170px;
-    margin-left: 0px;
-    width: 100%;
+    margin-top: -10px;
+    margin-left: -10px;
+    width: 1145px;
     height: 1200px;
   }
   .hello{
@@ -530,17 +469,82 @@
     padding-left: 80px;
     width: 100%;
     height: 1000px;
+    margin-left: -10px;
+  }
+  .skills h2{
+    font-size: 100px;
+  }
+  .skills__text{
+    font-size: 40px;
+     padding-bottom: 40px;
+  }
+  .skills__data{
+    font-size: 80px;
   }
   .portfolio{
     padding: 0px 0px;
     width: 100%;
+    height: 1500px;
+  }
+  .portfolio h2{
+    padding-left: 80px;
+    font-size: 100px;
+  }
+  .content img{
+    padding-left: 80px;
+    height: 500px;
+  }
+  .content h3{
+    font-size: 70px;
+    padding-left: 80px;
+  }
+  .column{
+    width: 100%;
+  }
+  .resume h2{
+    font-size: 100px;
+  }
+   .resume{
+    padding-bottom: 50px;
   }
   .contact{
     padding: 0px 0px;
     width: 100%;
   }
-  .footer{
-    padding: 0px 0px;
-    width: 100%;
+   .contact h2{
+    font-size: 100px;
+    padding-left: 80px;
   }
+   .contact h6{
+    font-size: 50px;
+    padding-left: 80px;
+  }
+  .row_1 a{
+    font-size: 80px;
+  }
+  .row_2 a{
+    font-size: 80px;
+  }
+  .button{
+    width: 200px;
+    height: 200px;
+  }
+  .footer{
+    margin-left: -10px;
+    padding: 20px 0px;
+    width: 1145px;
+    margin-top: 1000px;
+    font-size: 50px;
+  }
+}
+
+@media only screen and (min-width: 1440px)
+{
+  .home{
+    width: 1175px;
+  }
+  .footer{
+    margin-left: 240px;
+    padding: 0px 0px;
+    width: 1175px;
 }

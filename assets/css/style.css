@@ -502,11 +502,12 @@
     width: 100%;
   }
   .resume h2{
+    padding-left: 80px;
     font-size: 100px;
   }
    .resume{
-    padding-bottom: 50px;
-    height: 1500px;
+    padding: 0px 0px 0px 0px;
+    height: 1100px;
     margin-left: -10px;
     margin-right: -170px;
   }

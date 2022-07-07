@@ -1,16 +1,17 @@
-const words = ["DEVELOPER", "COMPETITIVE PROGRAMMER", "JUNIOR"];
+const words = ["DEVELOPER", "COMPETITIVE PROGRAMMER", "SENIOR"];
 let i = 0;
 let timer;
 
 function typingEffect() {
 	let word = words[i].split("");
-	var loopTyping = function() {
+	var loopTyping = function () {
 		if (word.length > 0) {
 			document.getElementById('word').innerHTML += word.shift();
 		} else {
 			deletingEffect();
 			return false;
 		};
+		
 		timer = setTimeout(loopTyping, 200);
 	};
 	loopTyping();
@@ -18,7 +19,7 @@ function typingEffect() {
 
 function deletingEffect() {
 	let word = words[i].split("");
-	var loopDeleting = function() {
+	var loopDeleting = function () {
 		if (word.length > 0) {
 			word.pop();
 			document.getElementById('word').innerHTML = word.join("");
@@ -40,12 +41,12 @@ typingEffect();
 
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
-    origin: 'top',
-    distance: '80px',
-    duration: 2000,
-    reset: true
+	origin: 'top',
+	distance: '80px',
+	duration: 2000,
+	reset: true
 });
 
 /*SCROLL SKILLS*/
-sr.reveal('.skills__text',{}); 
-sr.reveal('.skills__data',{interval: 200}); 
+sr.reveal('.skills__text', {});
+sr.reveal('.skills__data', { interval: 200 }); 

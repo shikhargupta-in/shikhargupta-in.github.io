@@ -19,22 +19,22 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
+  box-shadow: inset 0 0 5px grey;
   border-radius: 10px;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #DC143C; 
+  background: #DC143C;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #A00000; 
+  background: #A00000;
 }
 
-.name{
+.name {
   background-color: #140000;
   font-family: serif;
   font-weight: bold;
@@ -63,30 +63,37 @@
   color: black;
   background-color: #f1f1f1;
 }
-._1{
+
+._1 {
   background-color: #270000;
 }
-._2{
+
+._2 {
   background-color: #3b0000;
 }
-._3{
+
+._3 {
   background-color: #4e0000;
 }
-._4{
-  background-color: #620000; 
+
+._4 {
+  background-color: #620000;
 }
-._5{
-  background-color: #760000; 
+
+._5 {
+  background-color: #760000;
 }
-._6{
-  background-color: #b10000; 
+
+._6 {
+  background-color: #b10000;
 }
 
 /*Social Icons*/
-.social_icons{
+.social_icons {
   background-color: #d80000;
 }
-.social_icons a{
+
+.social_icons a {
   display: inline-block;
   padding-left: 12px;
   padding-top: 16px;
@@ -96,27 +103,29 @@
 }
 
 /* Home */
-.home{
-  margin: -10px 0px 0px 240px; /* Same as the width of the sidenav */
+.home {
+  margin: -10px 0px 0px 240px;
+  /* Same as the width of the sidenav */
   /* Full height */
   height: 700px;
   width: 1015px;
 
   /* Center and scale the image nicely */
-  background-image: url("bg.gif") ;
+  background-image: url("bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.hello{
+.hello {
   color: white;
   font-size: 50px;
   padding-left: 50px;
   padding-top: 120px;
   font-family: sans-serif;
 }
-.me{
+
+.me {
   color: white;
   font-size: 100px;
   padding-left: 50px;
@@ -129,12 +138,17 @@
 .blink {
   animation: blink 0.5s infinite;
 }
-@keyframes blink{
-  to { opacity: .0; }
+
+@keyframes blink {
+  to {
+    opacity: .0;
+  }
 }
+
 .flex {
   display: flex;
 }
+
 .header-sub-title {
   color: #fff;
   font-family: sans-serif;
@@ -144,19 +158,22 @@
   letter-spacing: 8px;
 }
 
-.icons{
-    padding-top: 50px;
+.icons {
+  padding-top: 50px;
 }
-.icons a{
+
+.icons a {
   color: white;
   padding-left: 50px;
   font-size: 30px;
 }
+
 /*Buttons */
-.learn{
+.learn {
   padding-left: 50px;
   padding-top: 30px;
 }
+
 .btn {
   border: 5px solid red;
   background-color: transparent;
@@ -166,6 +183,7 @@
   cursor: pointer;
   border-radius: 5px;
 }
+
 .default {
   border-color: #e7e7e7;
   color: white;
@@ -173,51 +191,57 @@
 
 .default:hover {
   background: #620000;
-  border-color: #620000; 
+  border-color: #620000;
 }
 
-.aboutme{
+.aboutme {
   padding-left: 300px;
   padding-right: 100px;
   height: 500px;
 }
-.about{
+
+.about {
   font-size: 40px;
   font-family: sans-serif;
 }
-.info{
+
+.info {
   font-family: sans-serif;
   font-size: 18px;
 }
-.heading{
+
+.heading {
   padding-top: 30px;
   color: #760000;
   font-size: 30px;
 }
 
-.skills{
+.skills {
   padding-left: 300px;
-  padding-right: 100px;
+  padding-right: 500px;
   height: 500px;
   background-color: #F0F0F0;
   margin-right: -7px;
 }
 
-.skills h2{
-   font-size: 40px;
+.skills h2 {
+  font-size: 40px;
   font-family: sans-serif;
   padding-top: 30px;
 }
+
 /* ===== SKILLS =====*/
-.skills__container{
+.skills__container {
   grid-row-gap: 2rem;
   text-align: center;
 }
-.skills__text{
+
+.skills__text {
   margin-bottom: var(--mb-4);
   padding-bottom: 20px;
 }
-.skills__data{
+
+.skills__data {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -226,18 +250,21 @@
   padding: .5rem 1rem;
   margin-bottom: var(--mb-4);
   border-radius: .5rem;
-  box-shadow: 0 4px 25px rgba(14,36,49,.15);
+  box-shadow: 0 4px 25px rgba(14, 36, 49, .15);
 }
-.skills__icon{
+
+.skills__icon {
   font-size: 2rem;
   margin-right: var(--mb-2);
   color: red;
 }
-.skills__names{
+
+.skills__names {
   display: flex;
   align-items: center;
 }
-.skills__bar{
+
+.skills__bar {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -246,27 +273,31 @@
   border-radius: .5rem;
   z-index: var(--z-back);
 }
-.skills__html{
+
+.skills__html {
   width: 95%;
 }
-.skills__css{
-  width: 85%;
-}
-.skills__js{
-  width: 65%;
-}
-.skills__ux{
+
+.skills__css {
   width: 85%;
 }
 
-.portfolio{
+.skills__js {
+  width: 65%;
+}
+
+.skills__ux {
+  width: 85%;
+}
+
+.portfolio {
   padding-left: 300px;
   padding-right: 100px;
   height: 600px;
 }
 
-.portfolio h2{
-   font-size: 40px;
+.portfolio h2 {
+  font-size: 40px;
   font-family: sans-serif;
 }
 
@@ -276,7 +307,7 @@
 
 /* Add padding BETWEEN each column (if you want) */
 .row,
-.row > .column {
+.row>.column {
   padding: 8px;
 }
 
@@ -313,36 +344,39 @@
   }
 }
 
-.resume{
+.resume {
   padding-left: 300px;
   padding-right: 100px;
   height: 790px;
   background-color: #F0F0F0;
-  background-image: url("leaves.gif") ;
+  background-image: url("leaves.gif");
   margin-right: -7px;
 }
 
-.resume h2{
+.resume h2 {
   font-size: 40px;
   font-family: sans-serif;
   padding-top: 30px;
 }
 
-.contact{
+.contact {
   padding-left: 300px;
   padding-right: 100px;
   height: 500px;
 }
-.con_head{
+
+.con_head {
   font-size: 40px;
   font-family: sans-serif;
   padding-bottom: -10px;
 }
-.con_sub{
+
+.con_sub {
   font-family: sans-serif;
   font-size: 15px;
 }
-.row_1 a{
+
+.row_1 a {
   padding: 15px 20px 30px 100px;
   text-decoration: none;
   font-size: 30px;
@@ -351,7 +385,7 @@
   font-family: sans-serif;
 }
 
-.row_2 a{
+.row_2 a {
   padding: 15px 20px 30px 100px;
   text-decoration: none;
   font-size: 30px;
@@ -375,26 +409,39 @@
 }
 
 #myBtn {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: #DC143C; /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 50%; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: #DC143C;
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Some padding */
+  border-radius: 50%;
+  /* Rounded corners */
+  font-size: 18px;
+  /* Increase font size */
 }
 
 #myBtn:hover {
   background-color: #A00000;
 }
 
-.footer{
+.footer {
   padding-left: 280px;
   padding-top: 0px;
   padding-bottom: 10px;
@@ -405,153 +452,184 @@
   font-family: sans-serif;
   overflow: hidden;
   position: absolute;
-  background-image: url("leaves.gif") ;
+  background-image: url("leaves.gif");
 }
 
 
-@media only screen and (max-width: 1000px)
-{
-  .sidebar{
+@media only screen and (max-width: 1000px) {
+  .sidebar {
     width: 0px;
   }
-  .home{
+
+  .home {
     margin-top: -10px;
     margin-left: -10px;
     width: 1145px;
     height: 1200px;
   }
-  .hello{
+
+  .hello {
     padding-left: 80px;
     padding-top: 200px;
     font-size: 70px;
   }
-  .me{
+
+  .me {
     padding-left: 80px;
     font-size: 120px;
   }
-  .header-sub-title{
+
+  .header-sub-title {
     padding-left: 80px;
     font-size: 40px;
   }
-  .icons a{
+
+  .icons a {
     padding-left: 100px;
     font-size: 100px;
   }
-  .learn{
+
+  .learn {
     padding-top: 60px;
     padding-left: 80px;
   }
-  .learn .btn{
+
+  .learn .btn {
     font-size: 50px;
   }
-  .aboutme{
+
+  .aboutme {
     padding: 0px 0px;
     width: 100%;
     height: 1400px;
   }
-  .about{
+
+  .about {
     padding-left: 60px;
     font-size: 100px;
   }
-  .info{
+
+  .info {
     padding-left: 60px;
     font-size: 40px;
   }
-  .heading{
+
+  .heading {
     padding-left: 80px;
     font-size: 100px;
   }
-  .Desc{
+
+  .Desc {
     padding-left: 80px;
     font-size: 30px;
   }
-  .skills{
+
+  .skills {
     padding-left: 80px;
     width: 100%;
     height: 1000px;
     margin-left: -10px;
   }
-  .skills h2{
+
+  .skills h2 {
     font-size: 100px;
   }
-  .skills__text{
+
+  .skills__text {
     font-size: 40px;
-     padding-bottom: 40px;
+    padding-bottom: 40px;
   }
-  .skills__data{
+
+  .skills__data {
     font-size: 80px;
   }
-  .portfolio{
+
+  .portfolio {
     padding: 0px 0px;
     width: 100%;
     height: 1700px;
   }
-  .portfolio h2{
+
+  .portfolio h2 {
     padding-left: 80px;
     font-size: 100px;
   }
-  .content img{
+
+  .content img {
     padding-left: 80px;
     height: 500px;
   }
-  .content h3{
+
+  .content h3 {
     font-size: 70px;
     padding-left: 80px;
   }
-  .column{
+
+  .column {
     width: 100%;
   }
-  .resume h2{
+
+  .resume h2 {
     padding-left: 80px;
     font-size: 100px;
   }
-   .resume{
+
+  .resume {
     padding: 0px 0px 0px 0px;
     height: 1100px;
     margin-left: -10px;
     margin-right: -170px;
   }
-  .contact{
+
+  .contact {
     padding: 0px 0px;
     width: 100%;
   }
-   .contact h2{
+
+  .contact h2 {
     font-size: 100px;
     padding-left: 80px;
   }
-   .contact h6{
+
+  .contact h6 {
     font-size: 50px;
     padding-left: 80px;
   }
-  .row_1 a{
+
+  .row_1 a {
     font-size: 80px;
   }
-  .row_2 a{
+
+  .row_2 a {
     font-size: 80px;
   }
-  .button{
+
+  .button {
     width: 200px;
     height: 200px;
   }
-  .footer{
+
+  .footer {
     margin-left: -10px;
     padding: 20px 0px;
     width: 1145px;
     margin-top: 1000px;
     font-size: 50px;
   }
-   #myBtn{
+
+  #myBtn {
     font-size: 40px;
   }
 }
 
-@media only screen and (min-width: 1440px)
-{
-  .home{
+@media only screen and (min-width: 1440px) {
+  .home {
     width: 1175px;
   }
-  .footer{
+
+  .footer {
     margin-left: 240px;
     padding: 0px 0px;
     width: 1175px;
+  }
 }

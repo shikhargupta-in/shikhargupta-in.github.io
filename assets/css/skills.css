@@ -1,0 +1,128 @@
+/* Skills Section - Modern Design */
+.skills {
+  margin-left: var(--sidebar-width);
+  padding: 80px 60px;
+  min-height: auto;
+  background: var(--bg-light);
+  width: calc(100% - var(--sidebar-width));
+}
+
+.skills h2 {
+  font-size: 42px;
+  font-weight: 700;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--text-dark);
+  margin-bottom: 16px;
+  position: relative;
+  display: inline-block;
+}
+
+.skills h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: var(--bg-gradient-alt);
+  border-radius: 2px;
+}
+
+.skills__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.skills__text {
+  margin-bottom: 40px;
+  font-size: 17px;
+  color: var(--text-gray);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.skills__data {
+  background: var(--bg-white);
+  padding: 24px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-speed);
+  border-left: 4px solid transparent;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.skills__data:hover {
+  box-shadow: var(--shadow-xl);
+  transform: translateY(-4px);
+  border-left-color: var(--primary-color);
+}
+
+.skills__icon {
+  font-size: 2rem;
+  margin-right: 16px;
+  color: var(--primary-color);
+}
+
+.skills__names {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  flex: 1;
+}
+
+.skills__names img {
+  margin-right: 12px;
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.skills__names span {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--text-dark);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.skills__bar {
+  width: 100%;
+  height: 8px;
+  background: rgba(37, 99, 235, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 12px;
+}
+
+.skills__bar::after {
+  content: "";
+  display: block;
+  height: 100%;
+  background: var(--bg-gradient-alt);
+  border-radius: 10px;
+  transition: width 1s ease-out;
+}
+
+.skills__html::after {
+  width: 95%;
+}
+
+.skills__css::after {
+  width: 85%;
+}
+
+.skills__js::after {
+  width: 65%;
+}
+
+.skills__ux::after {
+  width: 85%;
+}
+
+.skills__percentage {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--primary-color);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+

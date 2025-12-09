@@ -16,6 +16,39 @@
   <meta property="og:url" content="https://shikhargupta-in.github.io">
   <meta property="og:type" content="website">
   
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Shikhar Gupta - Software Development Engineer">
+  <meta name="twitter:description" content="Results-driven Software Engineer with 2.5+ years of experience designing and developing scalable backend systems.">
+  <meta name="twitter:image" content="https://shikhargupta-in.github.io/assets/img/me.jpg">
+  
+  <!-- Structured Data (JSON-LD) for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Shikhar Gupta",
+    "url": "https://shikhargupta-in.github.io",
+    "image": "https://shikhargupta-in.github.io/assets/img/me.jpg",
+    "jobTitle": "Software Development Engineer (SDE-2)",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Real Time Data Services Pvt. Ltd."
+    },
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "Jaypee Institute of Information Technology"
+    },
+    "knowsAbout": ["TypeScript", "JavaScript", "Python", "Node.js", "NestJS", "Flask", "MySQL", "MongoDB", "Backend Development", "Microservices"],
+    "sameAs": [
+      "https://github.com/shikhargupta-in",
+      "https://www.linkedin.com/in/shikhar-gupta-in/",
+      "https://leetcode.com/u/shikhargupta-in/"
+    ],
+    "email": "shikhargupta013@gmail.com"
+  }
+  </script>
+  
   <!-- Favicons - Complete Set for All Devices -->
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -25,6 +58,11 @@
   <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#2563eb">
+  
+  <!-- Professional Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
   
   <!-- Modular CSS Files -->
   <link rel="stylesheet" href="assets/css/variables.css">
@@ -37,6 +75,7 @@
   <link rel="stylesheet" href="assets/css/resume.css">
   <link rel="stylesheet" href="assets/css/contact.css">
   <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -45,6 +84,14 @@
 </head>
 
 <body>
+  <!-- Page Loader -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-content">
+      <div class="loader-spinner"></div>
+      <div class="loader-text">LOADING</div>
+    </div>
+  </div>
+
   <!-- The sidebar -->
   <div class="sidebar">
     <div class="name"><img src="assets/img/me.jpg" alt="Shikhar Gupta Profile Picture"><a href="#"> Shikhar Gupta</a></div>
@@ -294,7 +341,6 @@
 
   <footer class="footer">
     <div class="footer-content">
-      <p>Designed with &#10084;</p>
       <p>&#169; <span id="current-year"></span> Shikhar Gupta. All rights reserved</p>
     </div>
   </footer>

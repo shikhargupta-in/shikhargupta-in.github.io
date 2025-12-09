@@ -1,0 +1,96 @@
+/* Portfolio Section - Modern Card Design */
+.portfolio {
+  margin-left: var(--sidebar-width);
+  padding: 80px 60px;
+  min-height: auto;
+  background: var(--bg-white);
+  width: calc(100% - var(--sidebar-width));
+}
+
+.portfolio h2 {
+  font-size: 42px;
+  font-weight: 700;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--text-dark);
+  margin-bottom: 16px;
+  position: relative;
+  display: inline-block;
+}
+
+.portfolio h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: var(--bg-gradient-alt);
+  border-radius: 2px;
+}
+
+.portfolio img {
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+  transition: all var(--transition-speed);
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.portfolio img:hover {
+  transform: scale(1.02);
+}
+
+.project-title {
+  margin: 0;
+  padding: 20px 20px 8px 20px;
+}
+
+.project-title a {
+  text-decoration: none;
+  color: var(--text-dark);
+  transition: color var(--transition-speed);
+  font-size: 20px;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.project-title a:hover {
+  color: var(--primary-color);
+}
+
+.project-desc {
+  font-size: 15px;
+  color: var(--text-gray);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  padding: 0 20px 20px 20px;
+  line-height: 1.6;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+  margin-top: 40px;
+}
+
+.column {
+  width: 100%;
+}
+
+.content {
+  background-color: var(--bg-white);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-speed);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.content:hover {
+  box-shadow: var(--shadow-xl);
+  transform: translateY(-8px);
+}
+

@@ -1,0 +1,25 @@
+/* CSS Variables - Modern Professional Palette */
+:root {
+  --primary-color: #2563eb;
+  --primary-dark: #1e40af;
+  --primary-darker: #1e3a8a;
+  --primary-light: #3b82f6;
+  --accent-color: #06b6d4;
+  --accent-dark: #0891b2;
+  --sidebar-width: 280px;
+  --text-light: #ffffff;
+  --text-dark: #1f2937;
+  --text-gray: #6b7280;
+  --bg-light: #f9fafb;
+  --bg-white: #ffffff;
+  --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --bg-gradient-alt: linear-gradient(135deg, #2563eb 0%, #06b6d4 100%);
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --transition-speed: 0.3s;
+  --border-radius: 12px;
+  --border-radius-lg: 16px;
+}
+

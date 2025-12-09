@@ -1,0 +1,177 @@
+# ===================================
+# Portfolio Website - .gitignore
+# ===================================
+
+# ===== Operating System Files =====
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ===== Editor / IDE Files =====
+
+# VSCode
+.vscode/
+*.code-workspace
+.history/
+
+# Cursor
+.cursor/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# JetBrains IDEs (WebStorm, IntelliJ, etc.)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+
+# ===== Node.js (if you add build tools later) =====
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.npm
+.yarn-integrity
+package-lock.json
+yarn.lock
+
+# ===== Build and Distribution =====
+
+# Build outputs
+dist/
+build/
+out/
+*.min.css
+*.min.js
+
+# Compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# ===== Logs and Databases =====
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Databases
+*.sql
+*.sqlite
+*.sqlite3
+*.db
+
+# ===== Temporary Files =====
+
+# Temp directories
+tmp/
+temp/
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# Cache
+.cache/
+*.cache
+
+# ===== Environment and Secrets =====
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.env.*.local
+
+# Secrets
+*.pem
+*.key
+secrets.json
+credentials.json
+
+# ===== Backup Files =====
+
+*.bak
+*.backup
+*.old
+*.orig
+*-backup
+*-old
+
+# ===== Documentation Drafts =====
+
+# Exclude draft documents (keep final docs)
+*-draft.*
+*-wip.*
+TODO-personal.md
+NOTES.md
+
+# ===== Optional: Uncomment if needed =====
+
+# Ignore specific files if needed
+# about.txt
+
+# Ignore test files
+# test/
+# *.test.js
+
+# Ignore coverage reports
+# coverage/
+# .nyc_output/
+
+# ===== Keep Important Files =====
+
+# Make sure these are NOT ignored
+!README.md
+!LICENSE
+!CHANGELOG.md
+!MODERNIZATION-SUMMARY.md
+!FAVICON-GUIDE.md
+!.gitignore
+

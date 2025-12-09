@@ -1,0 +1,117 @@
+/* Responsive Design for Different Screen Sizes */
+
+/* Large Screens */
+@media only screen and (min-width: 1440px) {
+  .home, .aboutme, .skills, .portfolio, .resume, .contact {
+    max-width: 1600px;
+  }
+  
+  .home {
+    padding: 100px 80px;
+  }
+  
+  .aboutme, .skills, .portfolio, .resume, .contact {
+    padding: 100px 80px;
+  }
+}
+
+/* Tablets and Mobile */
+@media only screen and (max-width: 1024px) {
+  :root {
+    --sidebar-width: 0px;
+  }
+
+  .sidebar {
+    width: 0;
+    display: none;
+  }
+
+  .home {
+    margin-left: 0;
+    width: 100%;
+    padding: 60px 30px;
+    min-height: 100vh;
+  }
+
+  .hello {
+    font-size: 18px;
+  }
+
+  .me {
+    font-size: 48px;
+  }
+
+  .header-sub-title {
+    font-size: 22px;
+  }
+
+  .icons {
+    gap: 16px;
+  }
+
+  .icons a {
+    width: 45px;
+    height: 45px;
+    font-size: 22px;
+  }
+
+  .learn .btn {
+    font-size: 15px;
+    padding: 14px 24px;
+  }
+
+  .aboutme, .skills, .portfolio, .resume, .contact {
+    margin-left: 0;
+    width: 100%;
+    padding: 60px 30px;
+  }
+
+  .about, .skills h2, .portfolio h2, .resume h2, .con_head {
+    font-size: 32px;
+  }
+
+  .info, .skills__text, .con_sub {
+    font-size: 16px;
+  }
+
+  .heading {
+    font-size: 24px;
+  }
+
+  .Desc {
+    padding: 24px;
+    font-size: 15px;
+  }
+
+  .skills__container {
+    grid-template-columns: 1fr;
+  }
+
+  .row {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .row_1, .row_2 {
+    grid-template-columns: 1fr;
+  }
+
+  .footer {
+    margin-left: 0;
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  .footer-content p {
+    font-size: 14px;
+  }
+
+  #myBtn {
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+}
+

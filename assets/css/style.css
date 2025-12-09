@@ -1,12 +1,24 @@
+/* CSS Variables for consistent theming */
+:root {
+  --primary-color: #d80000;
+  --primary-dark: #A00000;
+  --primary-darker: #760000;
+  --sidebar-width: 260px;
+  --text-light: #ffffff;
+  --text-dark: #333333;
+  --bg-light: #F0F0F0;
+  --transition-speed: 0.3s;
+}
+
 /* Style the sidebar - fixed full height */
 .sidebar {
   height: 100%;
-  width: 260px;
+  width: var(--sidebar-width);
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #d80000;
+  background-color: var(--primary-color);
   overflow-x: hidden;
   padding-top: 0px;
   padding-bottom: 0px;
@@ -25,13 +37,13 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #DC143C;
+  background: var(--primary-color);
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #A00000;
+  background: var(--primary-dark);
 }
 
 .name {
@@ -90,7 +102,11 @@
 
 /*Social Icons*/
 .social_icons {
-  background-color: #d80000;
+  background-color: var(--primary-color);
+}
+
+.social-icons-center {
+  text-align: center;
 }
 
 .social_icons a {
@@ -100,6 +116,11 @@
   padding-bottom: 16px;
   padding-right: 12px;
   font-size: 15px;
+  transition: transform var(--transition-speed);
+}
+
+.social_icons a:hover {
+  transform: scale(1.2);
 }
 
 /* Home */
@@ -107,8 +128,9 @@
   margin: -10px 0px 0px 240px;
   /* Same as the width of the sidenav */
   /* Full height */
-  height: 700px;
-  width: 1015px;
+  min-height: 700px;
+  width: calc(100% - var(--sidebar-width));
+  max-width: 1200px;
 
   /* Center and scale the image nicely */
   background-image: url("bg.jpg");
@@ -186,18 +208,51 @@
 
 .default {
   border-color: #e7e7e7;
-  color: white;
+  color: var(--text-light);
+  transition: all var(--transition-speed);
 }
 
 .default:hover {
-  background: #620000;
-  border-color: #620000;
+  background: var(--primary-darker);
+  border-color: var(--primary-darker);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .aboutme {
   padding-left: 300px;
   padding-right: 100px;
-  height: 500px;
+  min-height: 500px;
+  padding-bottom: 50px;
+}
+
+/* Professional Experience Styling */
+.experience {
+  margin-top: 30px;
+}
+
+.experience-list {
+  margin-left: 20px;
+  line-height: 1.8;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.role-details {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.tech-stack {
+  margin: 5px 0 10px 0;
+  font-size: 14px;
+  color: var(--primary-darker);
+}
+
+.duration {
+  margin-top: 10px;
+  font-style: italic;
+  color: #666;
 }
 
 .about {
@@ -212,16 +267,22 @@
 
 .heading {
   padding-top: 30px;
-  color: #760000;
+  color: var(--primary-darker);
   font-size: 30px;
+}
+
+.Desc h4 {
+  margin-bottom: 5px;
+  font-family: sans-serif;
 }
 
 .skills {
   padding-left: 300px;
-  padding-right: 500px;
-  height: 500px;
-  background-color: #F0F0F0;
+  padding-right: 100px;
+  min-height: 500px;
+  background-color: var(--bg-light);
   margin-right: -7px;
+  padding-bottom: 50px;
 }
 
 .skills h2 {
@@ -256,7 +317,11 @@
 .skills__icon {
   font-size: 2rem;
   margin-right: var(--mb-2);
-  color: red;
+  color: var(--primary-color);
+}
+
+.skills__names img {
+  margin-right: 10px;
 }
 
 .skills__names {
@@ -268,7 +333,7 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  background-color: red;
+  background-color: var(--primary-color);
   height: .25rem;
   border-radius: .5rem;
   z-index: var(--z-back);
@@ -293,15 +358,45 @@
 .portfolio {
   padding-left: 300px;
   padding-right: 50px;
-  height: 600px;
+  min-height: 600px;
   background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),url("../img/work6.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: 50px;
 }
 
 .portfolio img{
   height: 125px;
-  width: 100px;
+  width: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-speed);
+}
+
+.portfolio img:hover {
+  transform: scale(1.05);
+}
+
+.project-title {
+  text-align: center;
+  margin: 10px 0 5px 0;
+}
+
+.project-title a {
+  text-decoration: none;
+  color: var(--text-dark);
+  transition: color var(--transition-speed);
+}
+
+.project-title a:hover {
+  color: var(--primary-color);
+}
+
+.project-desc {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  font-family: sans-serif;
+  padding: 0 10px;
 }
 
 .portfolio h2 {
@@ -355,10 +450,11 @@
 .resume {
   padding-left: 300px;
   padding-right: 100px;
-  height: 790px;
-  background-color: #F0F0F0;
+  min-height: 790px;
+  background-color: var(--bg-light);
   background-image: url("leaves.gif");
   margin-right: -7px;
+  padding-bottom: 50px;
 }
 
 .resume h2 {
@@ -370,7 +466,8 @@
 .contact {
   padding-left: 300px;
   padding-right: 100px;
-  height: 500px;
+  min-height: 500px;
+  padding-bottom: 50px;
 }
 
 .con_head {
@@ -403,9 +500,9 @@
 }
 
 .button {
-  background-color: #A00000;
+  background-color: var(--primary-dark);
   border: 1px;
-  color: white;
+  color: var(--text-light);
   padding: 20px;
   text-align: center;
   text-decoration: none;
@@ -414,6 +511,13 @@
   width: 100px;
   height: 100px;
   cursor: pointer;
+  transition: all var(--transition-speed);
+  border-radius: 10px;
+}
+
+.button:hover {
+  background-color: var(--primary-color);
+  transform: scale(1.1);
 }
 
 #myBtn {
@@ -431,9 +535,9 @@
   /* Remove borders */
   outline: none;
   /* Remove outline */
-  background-color: #DC143C;
+  background-color: var(--primary-color);
   /* Set a background color */
-  color: white;
+  color: var(--text-light);
   /* Text color */
   cursor: pointer;
   /* Add a mouse pointer on hover */
@@ -443,24 +547,36 @@
   /* Rounded corners */
   font-size: 18px;
   /* Increase font size */
+  transition: all var(--transition-speed);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 #myBtn:hover {
-  background-color: #A00000;
+  background-color: var(--primary-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 
 .footer {
   padding-left: 280px;
-  padding-top: 0px;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: black;
-  color: white;
-  width: 975px;
+  color: var(--text-light);
+  width: calc(100% - 280px);
+  max-width: 1200px;
   font-size: 15px;
   font-family: sans-serif;
   overflow: hidden;
-  position: absolute;
   background-image: url("leaves.gif");
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-content p {
+  margin: 5px 0;
 }
 
 
@@ -472,8 +588,8 @@
   .home {
     margin-top: -10px;
     margin-left: -10px;
-    width: 1145px;
-    height: 1200px;
+    width: 100%;
+    min-height: 1200px;
   }
 
   .hello {
@@ -620,7 +736,7 @@
   .footer {
     margin-left: -10px;
     padding: 20px 0px;
-    width: 1145px;
+    width: 100%;
     margin-top: 1000px;
     font-size: 50px;
   }
@@ -632,12 +748,30 @@
 
 @media only screen and (min-width: 1440px) {
   .home {
-    width: 1175px;
+    width: calc(100% - var(--sidebar-width));
+    max-width: 1400px;
   }
 
   .footer {
     margin-left: 240px;
-    padding: 0px 0px;
-    width: 1175px;
+    padding: 20px 0px;
+    width: calc(100% - 240px);
+    max-width: 1400px;
   }
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Link hover effects */
+a {
+  transition: all var(--transition-speed);
+}
+
+/* Accessibility improvements */
+*:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
 }

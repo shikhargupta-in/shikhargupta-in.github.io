@@ -6,7 +6,8 @@
   color: var(--text-light);
   width: calc(100% - var(--sidebar-width));
   font-size: 15px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: var(--font-primary);
+  font-weight: 400;
   box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
 

@@ -85,9 +85,103 @@ function updateCopyrightYear() {
 }
 
 /**
+ * Scroll reveal animation observer
+ */
+function initScrollReveal() {
+	const revealElements = document.querySelectorAll(".reveal, .reveal-left, .reveal-right, .reveal-scale");
+	
+	// Immediately activate elements that are already in viewport on load
+	revealElements.forEach(element => {
+		const rect = element.getBoundingClientRect();
+		const isInViewport = rect.top < window.innerHeight && rect.bottom > 0;
+		if (isInViewport) {
+			element.classList.add("active");
+		}
+	});
+	
+	// Set up observer for elements that scroll into view later
+	const revealObserver = new IntersectionObserver((entries) => {
+		entries.forEach(entry => {
+			if (entry.isIntersecting) {
+				entry.target.classList.add("active");
+			}
+		});
+	}, {
+		threshold: 0.15,
+		rootMargin: "0px 0px -80px 0px"
+	});
+	
+	revealElements.forEach(element => {
+		revealObserver.observe(element);
+	});
+}
+
+/**
+ * Animate skill bars when they come into view
+ */
+function initSkillBarAnimation() {
+	const skillBars = document.querySelectorAll(".skills__bar");
+	
+	const skillObserver = new IntersectionObserver((entries) => {
+		entries.forEach(entry => {
+			if (entry.isIntersecting) {
+				entry.target.classList.add("animate");
+				skillObserver.unobserve(entry.target);
+			}
+		});
+	}, {
+		threshold: 0.5
+	});
+	
+	skillBars.forEach(bar => {
+		skillObserver.observe(bar);
+	});
+}
+
+/**
+ * Hide page loader
+ */
+function hidePageLoader() {
+	const loader = document.getElementById("pageLoader");
+	if (loader) {
+		setTimeout(() => {
+			loader.classList.add("hidden");
+			// Remove from DOM after transition
+			setTimeout(() => {
+				loader.remove();
+			}, 500);
+		}, 500);
+	}
+}
+
+/**
+ * Add smooth scroll behavior to navigation links
+ */
+function initSmoothScroll() {
+	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+		anchor.addEventListener("click", function (e) {
+			const href = this.getAttribute("href");
+			if (href === "#") return;
+			
+			e.preventDefault();
+			const target = document.querySelector(href);
+			if (target) {
+				target.scrollIntoView({
+					behavior: "smooth",
+					block: "start"
+				});
+			}
+		});
+	});
+}
+
+/**
  * Initialize all functionality when DOM is ready
  */
 document.addEventListener("DOMContentLoaded", () => {
+	// Hide page loader
+	hidePageLoader();
+	
 	// Start typing animation
 	typingEffect();
 	
@@ -97,17 +191,26 @@ document.addEventListener("DOMContentLoaded", () => {
 	// Update copyright year
 	updateCopyrightYear();
 	
-	// Initialize ScrollReveal animations
+	// Initialize scroll reveal animations
+	initScrollReveal();
+	
+	// Initialize skill bar animations
+	initSkillBarAnimation();
+	
+	// Initialize smooth scrolling
+	initSmoothScroll();
+	
+	// Initialize ScrollReveal library if available
 	if (typeof ScrollReveal !== "undefined") {
 		const sr = ScrollReveal({
 			origin: "top",
 			distance: "80px",
 			duration: 2000,
-			reset: true
+			reset: false
 		});
 		
 		// Reveal skills section elements
-		sr.reveal(".skills__text", {});
-		sr.reveal(".skills__data", { interval: 200 });
+		sr.reveal(".skills__data", { interval: 100 });
+		sr.reveal(".content", { interval: 150 });
 	}
 }); 

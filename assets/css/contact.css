@@ -10,11 +10,12 @@
 .con_head {
   font-size: 42px;
   font-weight: 700;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: var(--font-heading);
   color: var(--text-dark);
   margin-bottom: 12px;
   position: relative;
   display: inline-block;
+  letter-spacing: -0.02em;
 }
 
 .con_head::after {
@@ -29,10 +30,12 @@
 }
 
 .con_sub {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: var(--font-primary);
   font-size: 18px;
-  color: var(--text-gray);
+  font-weight: 400;
+  color: var(--text-dark);
   margin-bottom: 50px;
+  line-height: 1.8;
 }
 
 .row_1, .row_2 {
@@ -52,7 +55,7 @@
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-md);
   transition: all var(--transition-speed);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: var(--font-primary);
   font-size: 18px;
   font-weight: 600;
   color: var(--text-dark);

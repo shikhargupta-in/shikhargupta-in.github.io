@@ -11,6 +11,8 @@ body {
   line-height: 1.7;
   font-size: 16px;
   font-weight: 400;
+  background: linear-gradient(180deg, #f8fafc 0%, #e0f2fe 50%, #f8fafc 100%);
+  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;

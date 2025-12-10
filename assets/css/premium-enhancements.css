@@ -1,0 +1,171 @@
+/* Premium Visual Enhancements */
+
+/* Premium Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(180deg, #f8fafc 0%, #e0f2fe 100%);
+  border-left: 1px solid rgba(59, 130, 246, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #3b82f6 0%, #14b8a6 100%);
+  border-radius: 6px;
+  border: 2px solid #f8fafc;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #2563eb 0%, #0d9488 100%);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.5);
+}
+
+/* Smooth Page Transitions */
+section {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* Premium Focus States */
+*:focus-visible {
+  outline: 3px solid rgba(59, 130, 246, 0.5);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Premium Selection */
+::selection {
+  background: linear-gradient(135deg, #3b82f6 0%, #14b8a6 100%);
+  color: #ffffff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+::-moz-selection {
+  background: linear-gradient(135deg, #3b82f6 0%, #14b8a6 100%);
+  color: #ffffff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Premium Button Effects */
+button, .btn {
+  position: relative;
+  overflow: hidden;
+}
+
+button::before, .btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+button:hover::before, .btn:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+/* Premium Image Effects */
+img {
+  transition: all var(--transition-speed) var(--transition-smooth);
+}
+
+/* Floating Animation for Icons */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.icons a {
+  animation: float 3s ease-in-out infinite;
+}
+
+.icons a:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.icons a:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+/* Premium Gradient Text Effect */
+.premium-text {
+  background: linear-gradient(135deg, #3b82f6 0%, #14b8a6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Smooth Loading Animation */
+@keyframes pageLoad {
+  from {
+    opacity: 0;
+    filter: blur(10px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+body {
+  animation: pageLoad 0.8s ease-out;
+}
+
+/* Premium Hover Glow for Cards */
+.content:hover,
+.testimonial-card:hover,
+.blog-card:hover,
+.Desc:hover {
+  animation: pulseGlow 2s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.05);
+  }
+}
+
+/* Premium Text Shadows */
+h1, h2, h3 {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Smooth Link Underlines */
+a {
+  position: relative;
+  display: inline-block;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background: linear-gradient(90deg, #3b82f6 0%, #14b8a6 100%);
+  transition: width var(--transition-speed) var(--transition-smooth);
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+/* Remove underline from buttons and cards */
+button a::after,
+.project-btn::after,
+.cta-btn::after,
+.blog-link::after {
+  display: none;
+}
+

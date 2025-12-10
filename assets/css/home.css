@@ -44,12 +44,24 @@
   font-size: 72px;
   font-family: var(--font-heading);
   font-weight: 800;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   line-height: 1.1;
   position: relative;
   z-index: 1;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   letter-spacing: -0.02em;
+}
+
+.tagline {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 20px;
+  font-weight: 500;
+  font-family: var(--font-primary);
+  margin-bottom: 25px;
+  max-width: 600px;
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
 }
 
 .flex {

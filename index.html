@@ -70,10 +70,12 @@
   <link rel="stylesheet" href="assets/css/sidebar.css">
   <link rel="stylesheet" href="assets/css/home.css">
   <link rel="stylesheet" href="assets/css/about.css">
+  <link rel="stylesheet" href="assets/css/testimonials.css">
   <link rel="stylesheet" href="assets/css/skills.css">
   <link rel="stylesheet" href="assets/css/portfolio.css">
   <link rel="stylesheet" href="assets/css/resume.css">
   <link rel="stylesheet" href="assets/css/contact.css">
+  <link rel="stylesheet" href="assets/css/cta.css">
   <link rel="stylesheet" href="assets/css/footer.css">
   <link rel="stylesheet" href="assets/css/animations.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
@@ -97,10 +99,11 @@
     <div class="name"><img src="assets/img/me.jpg" alt="Shikhar Gupta Profile Picture"><a href="#"> Shikhar Gupta</a></div>
     <div class="_1"><a href="#home"><i class="fa fa-fw fa-home"></i> HOME</a></div>
     <div class="_2"><a href="#aboutme"><i class="fa fa-fw fa-user-graduate"></i> ABOUT ME</a></div>
-    <div class="_3"><a href="#skills"><i class="fa fa-fw fa-code"></i> SKILLS</a></div>
-    <div class="_4"><a href="#portfolio"><i class="fa fa-fw fa-folder-open"></i> PORTFOLIO</a></div>
-    <div class="_5"><a href="#resume"><i class="fa fa-fw fa-file-alt"></i> RESUME</a></div>
-    <div class="_6"><a href="#contact"><i class="fa fa-fw fa-phone-volume"></i> CONTACT</a></div>
+    <div class="_3"><a href="#testimonials"><i class="fa fa-fw fa-comments"></i> TESTIMONIALS</a></div>
+    <div class="_4"><a href="#skills"><i class="fa fa-fw fa-code"></i> SKILLS</a></div>
+    <div class="_5"><a href="#portfolio"><i class="fa fa-fw fa-folder-open"></i> PORTFOLIO</a></div>
+    <div class="_6"><a href="#resume"><i class="fa fa-fw fa-file-alt"></i> RESUME</a></div>
+    <div class="_7"><a href="#contact"><i class="fa fa-fw fa-phone-volume"></i> CONTACT</a></div>
     <div class="social_icons"><br><div class="social-icons-center"><a href="skype:live:.cid.378570901ad82dea" target="_blank" rel="noopener noreferrer" aria-label="Skype Profile"><i class="fa fa-skype"></i></a>
       <a href="https://github.com/shikhargupta-in" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile"><i class="fa fa-github"></i></a>
       <a href="https://www.linkedin.com/in/shikhar-gupta-in/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i class="fa fa-linkedin"></i></a>
@@ -115,6 +118,7 @@
   <section class="home" id="home">
     <div class="hello">Hello, I am</div>
     <div class="me">Shikhar Gupta</div>
+    <p class="tagline">Backend Engineer specializing in scalable microservices and high-performance APIs</p>
     <div class="flex">
       <p class="header-sub-title" id="word"></p>
       <p class="header-sub-title blink">|</p>
@@ -163,6 +167,47 @@
       <h4>Secondary Education @ D.A.V. Riverside Public School, Ambala Cantt, India</h4>
       <h4>Grade - 91.6%</h4>
       <p>2017-2019</p>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials" id="testimonials">
+    <h2 class="testimonials-title">What People Say</h2>
+    <p class="testimonials-subtitle">Recommendations from colleagues and managers</p>
+    
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+        <p class="testimonial-text">"Shikhar is an exceptional backend engineer who consistently delivers high-quality solutions. His work on optimizing our API performance resulted in a 20% reduction in latency, significantly improving our user experience. He has a strong grasp of microservices architecture and is always eager to tackle complex technical challenges."</p>
+        <div class="testimonial-author">
+          <div class="author-info">
+            <h4 class="author-name">Ayush Jha</h4>
+            <p class="author-title">SDE 2 at Real Time Data Services</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="testimonial-card">
+        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+        <p class="testimonial-text">"I had the pleasure of working with Shikhar on several critical projects. His expertise in Node.js and system design is impressive. What stands out most is his ability to write clean, maintainable code and his dedication to mentoring junior developers. He's a valuable asset to any engineering team."</p>
+        <div class="testimonial-author">
+          <div class="author-info">
+            <h4 class="author-name">Ankit Jain</h4>
+            <p class="author-title">SDE 2 at Real Time Data Services</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="testimonial-card">
+        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+        <p class="testimonial-text">"Shikhar's problem-solving skills are outstanding. He helped me understand complex backend concepts and was always patient in code reviews. His attention to detail and commitment to best practices have significantly improved our team's code quality. It's been great learning from him!"</p>
+        <div class="testimonial-author">
+          <div class="author-info">
+            <h4 class="author-name">Sanidhay Grover</h4>
+            <p class="author-title">SDE 2 at Real Time Data Services</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -257,28 +302,64 @@
       <div class="column">
         <div class="content">
           <img src="assets/img/UI_Website.JPG" alt="Portfolio Website Screenshot" style="width:100%" loading="lazy">
+          <div class="tech-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+          </div>
           <h3 class="project-title">
             <a href="https://shikhargupta-in.github.io/" target="_blank" rel="noopener noreferrer">Portfolio Website</a>
           </h3>
-          <p class="project-desc">Personal portfolio showcasing projects and skills</p>
+          <p class="project-desc">Modern, responsive portfolio built with vanilla JavaScript featuring modular CSS architecture and professional design system</p>
+          <div class="project-links">
+            <a href="https://shikhargupta-in.github.io/" target="_blank" rel="noopener noreferrer" class="project-btn demo-btn">
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+            <a href="https://github.com/shikhargupta-in/shikhargupta-in.github.io" target="_blank" rel="noopener noreferrer" class="project-btn code-btn">
+              <i class="fab fa-github"></i> View Code
+            </a>
+          </div>
         </div>
       </div>
       <div class="column">
         <div class="content">
           <img src="assets/img/Weather_App_Demo.JPG" alt="Weather Application Screenshot" style="width:100%" loading="lazy">
+          <div class="tech-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">API</span>
+            <span class="tag">CSS</span>
+          </div>
           <h3 class="project-title">
             <a href="https://checkweathereport.netlify.app/" target="_blank" rel="noopener noreferrer">Weather App</a>
           </h3>
-          <p class="project-desc">Real-time weather information application</p>
+          <p class="project-desc">Real-time weather application integrating OpenWeather API with dynamic UI updates and location-based forecasts</p>
+          <div class="project-links">
+            <a href="https://checkweathereport.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-btn demo-btn">
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+          </div>
         </div>
       </div>
       <div class="column">
         <div class="content">
           <img src="assets/img/tic-tac-toe.JPG" alt="Tic-Tac-Toe Game Screenshot" style="width:100%" loading="lazy">
+          <div class="tech-tags">
+            <span class="tag">React</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">CSS3</span>
+          </div>
           <h3 class="project-title">
-            <a href="https://shikhargupta-in.github.io/react-tic-tac-toe/" target="_blank" rel="noopener noreferrer">Tic-Tac-Toe App</a>
+            <a href="https://shikhargupta-in.github.io/react-tic-tac-toe/" target="_blank" rel="noopener noreferrer">Tic-Tac-Toe Game</a>
           </h3>
-          <p class="project-desc">Interactive game built with React</p>
+          <p class="project-desc">Interactive game built with React featuring state management, game history tracking, and winner detection algorithm</p>
+          <div class="project-links">
+            <a href="https://shikhargupta-in.github.io/react-tic-tac-toe/" target="_blank" rel="noopener noreferrer" class="project-btn demo-btn">
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+            <a href="https://github.com/shikhargupta-in/react-tic-tac-toe" target="_blank" rel="noopener noreferrer" class="project-btn code-btn">
+              <i class="fab fa-github"></i> View Code
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -286,28 +367,58 @@
       <div class="column">
         <div class="content">
           <img src="assets/img/ecom_cust_eda.JPG" alt="Ecommerce Analysis Screenshot" style="width:100%" loading="lazy">
+          <div class="tech-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">Seaborn</span>
+          </div>
           <h3 class="project-title">
-            <a href="https://shikhargupta-in.github.io/portfolio/Ecommerce%20Customers.html" target="_blank" rel="noopener noreferrer">Ecommerce Customers - EDA</a>
+            <a href="https://shikhargupta-in.github.io/portfolio/Ecommerce%20Customers.html" target="_blank" rel="noopener noreferrer">Ecommerce Customer Analysis</a>
           </h3>
-          <p class="project-desc">Data analysis of customer behavior patterns</p>
+          <p class="project-desc">Exploratory data analysis of customer behavior using Python, uncovering insights for business optimization and customer segmentation</p>
+          <div class="project-links">
+            <a href="https://shikhargupta-in.github.io/portfolio/Ecommerce%20Customers.html" target="_blank" rel="noopener noreferrer" class="project-btn demo-btn">
+              <i class="fas fa-chart-line"></i> View Analysis
+            </a>
+          </div>
         </div>
       </div>
       <div class="column">
         <div class="content">
           <img src="assets/img/pred_house_prices.JPG" alt="House Price Prediction Screenshot" style="width:100%" loading="lazy">
+          <div class="tech-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Scikit-learn</span>
+            <span class="tag">ML</span>
+          </div>
           <h3 class="project-title">
-            <a href="https://shikhargupta-in.github.io/portfolio/Predicting-House-Prices.html" target="_blank" rel="noopener noreferrer">Predicting House Prices</a>
+            <a href="https://shikhargupta-in.github.io/portfolio/Predicting-House-Prices.html" target="_blank" rel="noopener noreferrer">House Price Prediction</a>
           </h3>
-          <p class="project-desc">Machine learning model for price prediction</p>
+          <p class="project-desc">Machine learning regression model using Random Forest to predict house prices with feature engineering and data preprocessing</p>
+          <div class="project-links">
+            <a href="https://shikhargupta-in.github.io/portfolio/Predicting-House-Prices.html" target="_blank" rel="noopener noreferrer" class="project-btn demo-btn">
+              <i class="fas fa-chart-line"></i> View Analysis
+            </a>
+          </div>
         </div>
       </div>
       <div class="column">
         <div class="content">
           <img src="assets/img/rent-car.jpg" alt="Rental Car Application Screenshot" style="width:100%" loading="lazy">
+          <div class="tech-tags">
+            <span class="tag">Node.js</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">Express</span>
+          </div>
           <h3 class="project-title">
-            <a href="https://rent-o-cars.herokuapp.com/" target="_blank" rel="noopener noreferrer">Rental Car Application</a>
+            <a href="https://rent-o-cars.herokuapp.com/" target="_blank" rel="noopener noreferrer">Car Rental System</a>
           </h3>
-          <p class="project-desc">Full-stack car rental management system</p>
+          <p class="project-desc">Full-stack MERN application with authentication, booking management, and admin dashboard for car rental operations</p>
+          <div class="project-links">
+            <a href="https://rent-o-cars.herokuapp.com/" target="_blank" rel="noopener noreferrer" class="project-btn demo-btn">
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -322,20 +433,91 @@
   <!-- Contact Me-->
   <section class="contact" id="contact">
     <h2 class="con_head">Contact Me</h2>
-    <h6 class="con_sub">Let's Keep In Touch</h6>
-    <div class="row_1">
-      <a href="https://www.linkedin.com/in/shikhar-gupta-in/" target="_blank" rel="noopener noreferrer"><button class="button" aria-label="LinkedIn"><i
-            class="fa fa-linkedin"></i></button> LinkedIn</a>
-      <a href="mailto:shikhargupta013@gmail.com"><button class="button" aria-label="Email"><i class="fa fa-envelope"></i></button> Email
-        Address</a>
-    </div>
-    <div class="row_2">
-      <a href="skype:live:.cid.378570901ad82dea" target="_blank" rel="noopener noreferrer"><button class="button" aria-label="Skype"><i class="fa fa-skype"></i></button> Skype
-        Id</a>
-      <a href="tel:7015420536"><button class="button" aria-label="Phone"><i class="fa fa-fw fa-phone-volume"></i></button> Contact</a>
+    <h6 class="con_sub">Have a project in mind or want to collaborate? Drop me a message!</h6>
+    
+    <div class="contact-container">
+      <!-- Contact Form -->
+      <div class="contact-form-wrapper">
+        <form class="contact-form" action="https://formspree.io/f/manrpljr" method="POST">
+          <div class="form-group">
+            <label for="name">Name *</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What's this about?">
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          
+          <button type="submit" class="submit-btn">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+      
+      <!-- Contact Links -->
+      <div class="contact-links-wrapper">
+        <h3>Connect With Me</h3>
+        <div class="contact-methods">
+          <a href="https://www.linkedin.com/in/shikhar-gupta-in/" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <div class="contact-icon"><i class="fa fa-linkedin"></i></div>
+            <div class="contact-info">
+              <h4>LinkedIn</h4>
+              <p>Let's connect professionally</p>
+            </div>
+          </a>
+          
+          <a href="mailto:shikhargupta013@gmail.com" class="contact-link">
+            <div class="contact-icon"><i class="fa fa-envelope"></i></div>
+            <div class="contact-info">
+              <h4>Email</h4>
+              <p>shikhargupta013@gmail.com</p>
+            </div>
+          </a>
+          
+          <a href="https://github.com/shikhargupta-in" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <div class="contact-info">
+              <h4>GitHub</h4>
+              <p>Check out my code</p>
+            </div>
+          </a>
+          
+          <a href="tel:7015420536" class="contact-link">
+            <div class="contact-icon"><i class="fa fa-phone"></i></div>
+            <div class="contact-info">
+              <h4>Phone</h4>
+              <p>+91 7015420536</p>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
   </section>
 
+  <!-- Call to Action -->
+  <section class="cta-section">
+    <div class="cta-content">
+      <h2 class="cta-title">Let's Build Something Amazing Together</h2>
+      <p class="cta-subtitle">Have a project in mind? Let's discuss how we can work together to bring your ideas to life.</p>
+      <div class="cta-buttons">
+        <a href="#contact" class="cta-btn primary">Get In Touch</a>
+        <a href="https://github.com/shikhargupta-in" target="_blank" rel="noopener noreferrer" class="cta-btn secondary">
+          <i class="fab fa-github"></i> View GitHub
+        </a>
+      </div>
+    </div>
+  </section>
 
   <button id="myBtn" title="Go to top" aria-label="Scroll to top"><i class="fas fa-arrow-alt-circle-up"></i></button>
 

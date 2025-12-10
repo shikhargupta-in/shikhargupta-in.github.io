@@ -60,7 +60,13 @@
     padding: 14px 24px;
   }
 
-  .aboutme, .skills, .portfolio, .resume, .contact {
+  .aboutme, .testimonials, .skills, .portfolio, .resume, .contact {
+    margin-left: 0;
+    width: 100%;
+    padding: 60px 30px;
+  }
+  
+  .cta-section {
     margin-left: 0;
     width: 100%;
     padding: 60px 30px;

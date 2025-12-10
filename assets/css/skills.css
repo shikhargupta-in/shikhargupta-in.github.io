@@ -90,20 +90,44 @@
 
 .skills__bar {
   width: 100%;
-  height: 8px;
-  background: rgba(37, 99, 235, 0.1);
-  border-radius: 10px;
+  height: 10px;
+  background: rgba(59, 130, 246, 0.12);
+  border-radius: 12px;
   overflow: hidden;
   margin-top: 12px;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.skills__bar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, 
+    transparent 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    transparent 100%);
+  animation: shimmer 2.5s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% { left: -100%; }
+  100% { left: 100%; }
 }
 
 .skills__bar::after {
   content: "";
   display: block;
   height: 100%;
-  background: var(--bg-gradient-alt);
-  border-radius: 10px;
-  transition: width 1s ease-out;
+  background: linear-gradient(90deg, #3b82f6 0%, #14b8a6 100%);
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(59, 130, 246, 0.5), inset 0 1px 2px rgba(255, 255, 255, 0.3);
+  transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  z-index: 1;
 }
 
 .skills__html::after {

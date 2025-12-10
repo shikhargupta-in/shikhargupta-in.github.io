@@ -35,18 +35,22 @@
 }
 
 .testimonial-card {
-  background: var(--bg-light);
-  padding: 32px;
-  border-radius: var(--border-radius-lg);
-  box-shadow: var(--shadow-md);
-  transition: all var(--transition-speed);
-  border-left: 4px solid var(--accent-color);
+  background: var(--glass-bg);
+  padding: 36px;
+  border-radius: var(--border-radius-xl);
+  box-shadow: var(--shadow-lg), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  transition: all var(--transition-speed) var(--transition-smooth);
+  border-left: 5px solid var(--accent-color);
+  border: 1px solid rgba(20, 184, 166, 0.1);
   position: relative;
+  backdrop-filter: blur(10px);
 }
 
 .testimonial-card:hover {
-  box-shadow: var(--shadow-xl);
-  transform: translateY(-4px);
+  box-shadow: 0 32px 64px rgba(20, 184, 166, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  transform: translateY(-6px) scale(1.02);
+  border-color: rgba(20, 184, 166, 0.3);
+  border-left-color: var(--accent-color);
 }
 
 .quote-icon {

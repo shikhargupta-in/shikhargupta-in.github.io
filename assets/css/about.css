@@ -63,19 +63,23 @@
 }
 
 .Desc {
-  background: var(--bg-light);
-  padding: 32px;
-  border-radius: var(--border-radius-lg);
-  box-shadow: var(--shadow-md);
+  background: var(--glass-bg);
+  padding: 36px;
+  border-radius: var(--border-radius-xl);
+  box-shadow: var(--shadow-lg), inset 0 1px 0 rgba(255, 255, 255, 0.6);
   margin-bottom: 30px;
-  transition: all var(--transition-speed);
-  border-left: 4px solid var(--primary-color);
+  transition: all var(--transition-speed) var(--transition-smooth);
+  border-left: 5px solid var(--primary-color);
+  border: 1px solid rgba(59, 130, 246, 0.1);
   animation: fadeInUp 0.6s ease-out;
+  backdrop-filter: blur(10px);
 }
 
 .Desc:hover {
-  box-shadow: var(--shadow-xl);
-  transform: translateY(-2px);
+  box-shadow: var(--shadow-premium), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  transform: translateY(-4px) scale(1.01);
+  border-color: rgba(59, 130, 246, 0.3);
+  border-left-color: var(--primary-color);
 }
 
 .Desc h4 {
@@ -123,18 +127,32 @@
   font-style: italic;
   color: var(--accent-dark);
   font-weight: 500;
+  font-size: 14px;
 }
 
-.education .Desc, .experience .Desc {
+.education-detail {
+  margin: 8px 0;
+  font-size: 16px;
+  color: var(--text-dark);
+  font-family: var(--font-primary);
+}
+
+.education-detail strong {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.education {
+  margin-top: 50px;
+}
+
+.education .Desc {
   background: var(--bg-light);
-  padding: 28px;
-  border-radius: var(--border-radius);
+  padding: 32px;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
   margin-bottom: 20px;
-  box-shadow: var(--shadow-sm);
   transition: all var(--transition-speed);
-}
-
-.education .Desc:hover, .experience .Desc:hover {
-  box-shadow: var(--shadow-lg);
+  border-left: 4px solid var(--accent-color);
 }
 
